@@ -6,7 +6,6 @@ export default function createGame() {
             width: 10,
             height: 10
         }
-
     };
 
     function addPlayer(command) {
@@ -73,7 +72,6 @@ export default function createGame() {
         const playerId = command.playerId
         const player = state.players[playerId];
         const moveFunction = acceptedMoves[keyPressed];
-
 
         if (player && moveFunction) {
             moveFunction(player);
